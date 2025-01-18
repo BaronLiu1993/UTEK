@@ -36,8 +36,11 @@ pip install -r requirements.txt
 Set up the PostgreSQL database:
 
 ### Create a database named utek:
-Create the required table:
-sql
+### PostgreSQL Table Schema
+
+The following SQL script creates the `reported_locations` table used in this project:
+
+```sql
 CREATE TABLE reported_locations (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
@@ -47,6 +50,7 @@ CREATE TABLE reported_locations (
     severity INT,
     category VARCHAR(50)
 );
+
 ### Create virtual enviroment:
 python -m venv myenv
 ./myenv/Scripts/activate
