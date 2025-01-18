@@ -33,7 +33,6 @@ Navigate to the project directory:
 cd into it
 ### Install required libraries:
 pip install -r requirements.txt
-Set up the PostgreSQL database:
 
 ### Create a database named utek:
 ### PostgreSQL Table Schema
