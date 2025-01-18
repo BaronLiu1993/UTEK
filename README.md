@@ -3,7 +3,7 @@
 ## Team Details
 - **Team Member**: Baron Liu  
 - **Team Number**: Unknown for now  
-
+- **Why I used what I used**: I'll be honest Streamlit is the GOAT of making projects as fast as possible, also python is easy to write in and postgresql because I was just familiar with it.
 ---
 
 ## Project Overview
@@ -15,7 +15,6 @@ The Hurricane Damage Reporter is a web-based application designed to allow users
 - **Category of the damage** (e.g., Flood, Fire, Wind Damage, Other)
 
 All submissions are stored in a PostgreSQL database and displayed on an interactive map using Folium, integrated with Streamlit.
-
 ---
 
 ## Installation and Execution Instructions
@@ -23,16 +22,26 @@ All submissions are stored in a PostgreSQL database and displayed on an interact
 ### Prerequisites
 - **Python Version**: Python 3.8 or higher
 - **PostgreSQL**: Installed and running
-- **Dependencies**: Install libraries listed in the Dependencies section
+- **Dependencies**:
+  ```bash
+     import streamlit as st
+   from streamlit_folium import st_folium
+   import folium
+   from geopy.geocoders import Nominatim
+   import psycopg2
+   from psycopg2.extras import RealDictCursor
+   import pygame
 
 ### Setup Instructions
-1. **Clone the repository**:
+**Clone the repository**:
    ```bash
    git clone https://github.com/your-repo/hurricane-damage-reporter.git
 Navigate to the project directory:
 cd into it
+
 ### Install required libraries:
-pip install -r requirements.txt
+ ```bash
+   pip install -r requirements.txt
 
 ### Create a database named utek:
 ### PostgreSQL Table Schema
@@ -51,10 +60,13 @@ CREATE TABLE reported_locations (
 );
 
 ### Create virtual enviroment:
-python -m venv myenv
-./myenv/Scripts/activate
+```bash
+   python -m venv myenv
+```bash
+   ./myenv/Scripts/activate
 
 ### Run the application:
-streamlit run app.py
+```bash
+   streamlit run app.py
 
 ### and then ur chilling
