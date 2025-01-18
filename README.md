@@ -31,17 +31,20 @@ All submissions are stored in a PostgreSQL database and displayed on an interact
    import psycopg2
    from psycopg2.extras import RealDictCursor
    import pygame
+  ```
 
 ### Setup Instructions
 **Clone the repository**:
    ```bash
    git clone https://github.com/your-repo/hurricane-damage-reporter.git
-Navigate to the project directory:
-cd into it
+```
+### Navigate to the project directory:
+and just cd/filename or whatever you called it
 
 ### Install required libraries:
  ```bash
    pip install -r requirements.txt
+```
 
 ### Create a database named utek:
 ### PostgreSQL Table Schema
@@ -58,15 +61,19 @@ CREATE TABLE reported_locations (
     severity INT,
     category VARCHAR(50)
 );
+```
 
 ### Create virtual enviroment:
 ```bash
    python -m venv myenv
+```
 ```bash
    ./myenv/Scripts/activate
+```
 
 ### Run the application:
 ```bash
    streamlit run app.py
+```
 
-### and then ur chilling
+### and then ur chilling have fun bro
