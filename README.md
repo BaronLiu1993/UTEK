@@ -2,7 +2,7 @@
 
 ## Team Details
 - **Team Member**: Baron Liu  
-- **Team Number**: Unknown for now  
+- **Team Number**: 19
 - **Why I used what I used**: I'll be honest Streamlit is the GOAT of making projects as fast as possible, also python is easy to write in and postgresql because I was just familiar with it.
 ---
 
