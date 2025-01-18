@@ -24,7 +24,7 @@ All submissions are stored in a PostgreSQL database and displayed on an interact
 - **PostgreSQL**: Installed and running
 - **Dependencies**:
   ```bash
-     import streamlit as st
+   import streamlit as st
    from streamlit_folium import st_folium
    import folium
    from geopy.geocoders import Nominatim
